@@ -150,5 +150,58 @@ span{
     justify-content: space-around;
     padding: 4%;
     margin: 3cm;
+    margin-left: 230px;
+}
 
+button{
+    color: black;
+}
+
+/* GENDERS */
+.h1-genders{
+    color: white;
+}
+.span-genders1{
+    border-radius: 10px;
+    display: inline;
+    padding: 50px;
+    justify-content: center;
+    background-color: rgba(51, 50, 50, 0.54);
+    margin-right: 30px;
+    block-size: 380px;
+}
+
+.span-genders2{
+    border-radius: 10px;
+    display: inline;
+    padding: 50px;
+    justify-content: center;
+    background-color: rgba(51, 50, 50, 0.54);
+    margin-left: 30px;
+    block-size: 380px;
+}
+
+.section-genders{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    block-size: 340px;
+    font-family: 'Montserrat', sans-serif;
+    position:absolute;
+    justify-content: space-around;
+    padding: 4%;
+    margin-top: 70px;
+    margin-left: 350px;
+    margin-right: 100px;
+}
+
+.div-genders{
+    border-radius: 20px;
+    text-decoration: none; /* no entiendo porque no funciona */
+    text-align: center;
+    padding: 15px ;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(71, 71, 71);
 }
