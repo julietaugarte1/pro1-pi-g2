@@ -49,6 +49,7 @@ li a {
     color: white;
     width: 200px;
     height: 16px;
+   
 }
 
 .search{
@@ -96,6 +97,11 @@ li a {
     margin-top: 20px;
     margin-left: 25px;
     
+    
+}
+.portada:hover{
+    width: 240px;
+    height: 350px;
 }
 
 .bloque-portada{        /* cuadrado de las peliculas */
@@ -110,4 +116,8 @@ li a {
     margin: 5px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+}
+.titulospeliculas{
+    text-decoration: none;
+    color: white;
 }
