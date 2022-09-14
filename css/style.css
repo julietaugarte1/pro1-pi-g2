@@ -80,6 +80,7 @@ li a {
 
 .bloque1{
     display: flex;
+   
 }
 
 .bloque2{
@@ -103,6 +104,13 @@ li a {
 .portada:hover{
     width: 240px;
     height: 350px;
+}
+
+.portadadetail{
+    width: 215px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 25px;
 }
 
 .bloque-portada{        /* cuadrado de las peliculas */
@@ -129,4 +137,18 @@ li a {
 span{
     display: inline;
     color: white;
+}
+
+.bloquedetail{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(51, 50, 50, 0.54);
+    border-radius: 10px;
+    block-size: 340px;
+    font-family: 'Montserrat', sans-serif;
+    position:absolute;
+    justify-content: space-around;
+    padding: 4%;
+    margin: 3cm;
+
 }
