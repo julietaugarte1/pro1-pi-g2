@@ -1,3 +1,4 @@
+/* HOME */
 body{
     background-color: black;
 }
@@ -114,10 +115,18 @@ li a {
     color: white;
     font-size: 20px;
     margin: 5px;
-    text-align: center;
+    text-align: center ;
     font-family: 'Montserrat', sans-serif;
 }
+
 .titulospeliculas{
     text-decoration: none;
+    color: white;
+}
+
+/* DETAIL SERIES */
+
+span{
+    display: inline;
     color: white;
 }
