@@ -2,6 +2,7 @@
  /* ALL HTMLS */
 body{
     background-color: black;
+    
 }
 
     /* header*/
@@ -83,7 +84,23 @@ body{
     }
 
 
+/* footer */
+footer{
+    background-color: rgb(36, 36, 36);
+    margin-top: 100px;}
 
+.footer-list{
+    list-style-type: none;
+    display: inline-block;
+    align-items: center;
+}
+
+.footer-text {color: white;
+    font-size: 15px;
+    margin: 5px;
+    text-align: center ;
+    font-family: 'Montserrat', sans-serif;} 
+    
 
 
  /* HOME HTML */
