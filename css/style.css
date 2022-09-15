@@ -1,135 +1,149 @@
-/* HOME */
+/* ALL HTMLS */
 body{
     background-color: black;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 80px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-}
+    /* header*/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 80px;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+    }
 
-li a {
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    padding: 15px 15px;
-    font-size: 30px;
-    float: left;
-    color: white;  
-    font-family: 'Oswald', sans-serif;
-}
+    li a {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding: 15px 15px;
+        font-size: 30px;
+        float: left;
+        color: white;  
+        font-family: 'Oswald', sans-serif;
+    }
 
-.home{
-    margin-left: -280px;
-    margin-top: 13px;
-    color: white;
-}
+    .home{
+        margin-left: -280px;
+        margin-top: 13px;
+        color: white;
+    }
 
-.generos{
-    margin-left: -185px;
-    margin-top: 13px;
-    color: white;
-}
+    .generos{
+        margin-left: -185px;
+        margin-top: 13px;
+        color: white;
+    }
 
-.favoritos{
-    margin-left: -55px;
-    margin-top: 13px;
-    color: white;
-}
+    .favoritos{
+        margin-left: -55px;
+        margin-top: 13px;
+        color: white;
+    }
 
-.buscador{
-    margin-left: -10px;
-    margin-top: 13px;
-    color: white;
-    text-align: left;
-    color: white;
-    width: 200px;
-    height: 16px;
-   
-}
-
-.search{
-    display: flex;
-    justify-content: right;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    margin-top: 25px;
-    margin-right: 40px;
-
-}
-
-
-input{
+    .buscador{
+        margin-left: -10px;
+        margin-top: 13px;
+        color: white;
+        text-align: left;
+        color: white;
+        width: 200px;
+        height: 16px;
     
-    background-color: rgb(60, 56, 56);
-    border-radius: 15px;
-    border-style: none;
-    margin-left: 10px;
-}
+    }
 
-.logo{
-    width: 16%;
-    height: 16%;
-    margin-left: -60%;
-    margin-top: -2%;
-}
+    .search{
+        display: flex;
+        justify-content: right;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        margin-top: 25px;
+        margin-right: 40px;
 
-.titulo{
-    margin-left: 10px;
-    margin-top: 50px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-}
+    }
 
-.bloque1{
-    display: flex;
-   
-}
 
-.bloque2{
-    display: flex;
-    margin-top: 15px;
-}
+    input{
+        
+        background-color: rgb(60, 56, 56);
+        border-radius: 15px;
+        border-style: none;
+        margin-left: 10px;
+    }
 
-.bloque3{
-    display: flex;
-    margin-top: 15px;
-}
+    .logo{
+        width: 16%;
+        height: 16%;
+        margin-left: -60%;
+        margin-top: -2%;
+    }
 
-.portada{       /* fotos de las pelis */
+
+
+
+
+ /* HOME HTML */
+
+    /* bloques de peliculas */
+     .titulo{
+        margin-left: 10px;
+        margin-top: 50px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+    }
+
+    .bloque1{
+        display: flex;
+    
+    }
+
+    .bloque2{
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .bloque3{
+        display: flex;
+        margin-top: 15px;
+    }
+
+
+     .bloque-portada{        /* bloque de cada pelicula individualmente */
+        width: 250px;
+        height: 300px;
+        margin-left: 30px;
+    }
+
+
+    .portada{               /* imagenes de las peliculas */
+        width: 215px;
+        height: 300px;
+        margin-top: 20px;
+        margin-left: 25px;
+        
+        
+    }
+    
+    .portada:hover{        /* para que se agrande la portada cuando pasas x ahi */
+        width: 240px;
+        height: 350px;
+    }
+
+
+/* DETAIL SERIES Y MOVIES */
+
+    .portadadetail{
     width: 215px;
     height: 300px;
     margin-top: 20px;
     margin-left: 25px;
-    
-    
-}
-/* para que se agrande la portada cuando pasas x ahi */
-.portada:hover{
-    width: 240px;
-    height: 350px;
 }
 
-.portadadetail{
-    width: 215px;
-    height: 300px;
-    margin-top: 20px;
-    margin-left: 25px;
-}
-
-.bloque-portada{        /* cuadrado de las peliculas */
-    width: 250px;
-    height: 300px;
-    margin-left: 30px;
-}
-
+   
 .texto-portada{
     color: white;
     font-size: 20px;
@@ -143,7 +157,6 @@ input{
     color: white;
 }
 
-/* DETAIL SERIES */
 
 span{
     display: inline;
@@ -168,9 +181,16 @@ span{
     margin-right: 20px;
 }
 
-button{
+.botonfavoritos{
     color: black;
+    border-radius: 5px;
 }
+
+.botonfavoritos:hover{
+  color: crimson;
+}
+
+
 
 /* GENDERS */
 .h1-genders{
@@ -196,6 +216,7 @@ button{
     block-size: 380px;
 }
 
+
 .section-genders{
     display: flex;
     justify-content: center;
@@ -210,6 +231,7 @@ button{
     margin-right: 100px;
 }
 
+ 
 .div-genders{
     border-radius: 20px;
     text-align: center;
@@ -219,6 +241,8 @@ button{
     font-family: 'Oswald', sans-serif;
     background-color: rgb(71, 71, 71);
 }
+
+
 
 .div-genders:hover {
     background-color:black;
