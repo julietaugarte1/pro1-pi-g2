@@ -60,9 +60,19 @@ li a {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     margin-top: 25px;
-    margin-right: 43px;
+    margin-right: 40px;
 
 }
+
+
+input{
+    
+    background-color: rgb(60, 56, 56);
+    border-radius: 15px;
+    border-style: none;
+    margin-left: 10px;
+}
+
 .logo{
     width: 16%;
     height: 16%;
@@ -101,6 +111,7 @@ li a {
     
     
 }
+/* para que se agrande la portada cuando pasas x ahi */
 .portada:hover{
     width: 240px;
     height: 350px;
@@ -153,6 +164,10 @@ span{
     margin-left: 230px;
 }
 
+.bloque-portada{
+    margin-right: 20px;
+}
+
 button{
     color: black;
 }
@@ -197,11 +212,19 @@ button{
 
 .div-genders{
     border-radius: 20px;
-    text-decoration: none; /* no entiendo porque no funciona */
     text-align: center;
     padding: 15px ;
     margin-bottom: 10px;
     font-size: 15px;
     font-family: 'Oswald', sans-serif;
     background-color: rgb(71, 71, 71);
+}
+
+.div-genders:hover {
+    background-color:black;
+}
+
+.tipos_generos{
+    text-decoration: none;
+    color: white;
 }
