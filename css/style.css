@@ -85,11 +85,18 @@ input {
 
 
 /* footer */
-footer {
+.footer {
+    
+}
+.sectionfooter {
+    height: 150px;
     background-color: rgb(36, 36, 36);
-    margin-top: 100px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+
+.articlefooter {
+    margin-top: 150px;
 }
 
 
@@ -138,17 +145,18 @@ footer {
 
 .bloque1 {
     display: flex;
+    height: 400px;
 
 }
 
 .bloque2 {
     display: flex;
-    margin-top: 15px;
+    height: 400px;
 }
 
 .bloque3 {
     display: flex;
-    margin-top: 15px;
+    height: 400px;
 }
 
 
@@ -198,6 +206,14 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
+.fecha-portada {
+    color: grey;
+    font-size: 15px;
+    margin: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .titulospeliculas {
     text-decoration: none;
     color: white;
@@ -214,13 +230,13 @@ span {
     justify-content: center;
     background-color: rgba(51, 50, 50, 0.54);
     border-radius: 10px;
-    block-size: 340px;
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    justify-content: space-around;
     padding: 4%;
-    margin: 3cm;
+    margin-top: 3cm;
     margin-left: 230px;
+    color: white;
+    height: 350px;
+    width: 800px;
 }
 
 .bloque-portada {
@@ -236,6 +252,12 @@ span {
 .botonfavoritos:hover {
     color: white;
     background-color: red;
+}
+
+.flechainicio {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
 }
 
 
