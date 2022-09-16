@@ -173,7 +173,10 @@ footer{
 
 /* DETAIL SERIES Y MOVIES */
 
-.portadadetail{
+
+/* DETAIL SERIES Y MOVIES */
+
+    .portadadetail{
     width: 215px;
     height: 300px;
     margin-top: 20px;
@@ -279,6 +282,8 @@ span{
     font-family: 'Oswald', sans-serif;
     background-color: rgb(71, 71, 71);
 }
+
+
 
 .div-genders:hover {
     background-color:black;
