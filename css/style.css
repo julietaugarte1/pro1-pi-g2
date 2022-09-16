@@ -87,22 +87,41 @@ body{
 /* footer */
 footer{
     background-color: rgb(36, 36, 36);
-    margin-top: 100px;}
+    margin-top: 100px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}    
 
-.footer-list{
+
+.footer-list1{      /* lo separe en tres distintos para poder centrarlo */
+    margin-top: 10px;
+    margin-left: 500px;
     list-style-type: none;
+    display: flex;
     display: inline-block;
-    align-items: center;
+}
+.footer-list2{
+    margin-top: 10px;
+    list-style-type: none;
+    display: flex;
+    display: inline-block; 
+}
+.footer-list3{
+    margin-top: 10px;
+    list-style-type: none;
+    display: flex;
+    display: inline-block;
 }
 
-.footer-text {color: white;
+
+.footer-text {
+    color: grey;
     font-size: 15px;
     margin: 5px;
     text-align: center ;
-    font-family: 'Montserrat', sans-serif;} 
+    font-family: 'Montserrat', sans-serif;
+} 
     
-
-
  /* HOME HTML */
 
     /* bloques de peliculas */
@@ -154,7 +173,7 @@ footer{
 
 /* DETAIL SERIES Y MOVIES */
 
-    .portadadetail{
+.portadadetail{
     width: 215px;
     height: 300px;
     margin-top: 20px;
@@ -220,8 +239,9 @@ span{
     padding: 50px;
     justify-content: center;
     background-color: rgba(51, 50, 50, 0.54);
-    margin-right: 30px;
+    margin-right: 10px;
     block-size: 380px;
+    margin-left: -110px;
 }
 
 .span-genders2{
@@ -259,8 +279,6 @@ span{
     font-family: 'Oswald', sans-serif;
     background-color: rgb(71, 71, 71);
 }
-
-
 
 .div-genders:hover {
     background-color:black;
