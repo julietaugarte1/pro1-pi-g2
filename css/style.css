@@ -1,7 +1,6 @@
 /* ALL HTMLS */
 body {
     background-color: black;
-
 }
 
 /* header*/
@@ -9,7 +8,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     height: 80px;
     color: white;
     font-family: 'Oswald', sans-serif;
@@ -44,31 +42,20 @@ li a {
     color: white;
 }
 
-.buscador {
-    margin-left: -10px;
-    margin-top: 13px;
-    color: white;
-    text-align: left;
-    color: white;
-    width: 200px;
-    height: 16px;
-
-}
-
 .search {
     display: flex;
     justify-content: right;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
-    margin-top: 25px;
     margin-right: 40px;
-
 }
 
+form {
+    display: inline;
+}
 
 input {
-
     background-color: rgb(60, 56, 56);
     border-radius: 15px;
     border-style: none;
@@ -85,9 +72,8 @@ input {
 
 
 /* footer */
-
 .sectionfooter {
-    height: 150px;
+    height: 80px;
     background-color: rgb(36, 36, 36);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -96,7 +82,6 @@ input {
 .articlefooter {
     margin-top: 150px;
 }
-
 
 .footer-list1 {
     /* lo separe en tres distintos para poder centrarlo */
@@ -121,7 +106,6 @@ input {
     display: inline-block;
 }
 
-
 .footer-text {
     color: grey;
     font-size: 15px;
@@ -141,22 +125,12 @@ input {
     font-size: 20px;
 }
 
-.bloque1 {
-    display: flex;
-    height: 400px;
-
-}
-
-.bloque2 {
-    display: flex;
-    height: 400px;
-}
-
+.bloque1,
+.bloque2,
 .bloque3 {
     display: flex;
     height: 400px;
 }
-
 
 .bloque-portada {
     /* bloque de cada pelicula individualmente */
@@ -165,15 +139,12 @@ input {
     margin-left: 30px;
 }
 
-
 .portada {
     /* imagenes de las peliculas */
     width: 215px;
     height: 300px;
     margin-top: 20px;
-    margin-left: 25px;
-
-
+    margin-left: 20px;
 }
 
 .portada:hover {
@@ -182,19 +153,13 @@ input {
     height: 350px;
 }
 
-
 /* DETAIL SERIES Y MOVIES */
-
-
-/* DETAIL SERIES Y MOVIES */
-
 .portadadetail {
     width: 215px;
     height: 300px;
     margin-top: 20px;
     margin-left: 25px;
 }
-
 
 .texto-portada {
     color: white;
@@ -216,7 +181,6 @@ input {
     text-decoration: none;
     color: white;
 }
-
 
 span {
     display: inline;
@@ -254,11 +218,9 @@ span {
 
 .flechainicio {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 40px;
 }
-
-
 
 /* GENDERS */
 .h1-genders {
@@ -297,7 +259,7 @@ span {
     justify-content: space-around;
     padding: 4%;
     margin-top: 70px;
-    margin-left: 350px;
+    margin-left: 420px;
     margin-right: 100px;
 }
 
@@ -312,8 +274,6 @@ span {
     background-color: rgb(71, 71, 71);
 }
 
-
-
 .div-genders:hover {
     background-color: black;
 }
@@ -325,17 +285,14 @@ span {
 
 /* cambio a celular */
 @media (max-width: 400px) {
-
-    .bloque1 {
-        scroll-snap-type: x mandatory;
-        overflow-y: scroll;
-        overflow-x: hidden;
-
+    /* HOME */
+    .main-index{
+        height: 6000px;
     }
-
     .bloque1,
     .bloque2,
     .bloque3 {
+        height: 1950px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -360,9 +317,14 @@ span {
     }
 
     .header{
-        height: 600px;
+        height: 400px;
     }
 
+    .search{
+        margin-top: 20px;
+        margin-right: 98px
+    }
+    
     .generos {
          margin : 0px;
         color: white;
@@ -376,14 +338,13 @@ span {
 
     .listaHeader{
         list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 400px;
-    /* overflow: hidden; */
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: 'Oswald', sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-family: 'Oswald', sans-serif;
     }
 
     .favoritos {
@@ -391,4 +352,12 @@ span {
         margin-top: 0px;
         color: white;
     }
+
+    .footer-list1,
+    .footer-list2,
+    .footer-list3{
+        
+    }
+
+    /* DETAIL MOVIES Y SERIES */
 }

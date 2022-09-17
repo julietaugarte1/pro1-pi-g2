@@ -21,26 +21,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header> 
+    <header class="header"> 
         <nav class="menu"> 
-            <ul>
-                <li><a href="./index.html"><img class="logo" src="./img/FILMEXULT.png"></a> </li>
+            <ul class="listaHeader">
+                <li> <a href="./index.html"><img class="logo" src="./img/FILMEXULT.png"></a> </li>
                 <li> <a class="home" href="index.html">INICIO</a> </li>
                 <li> <a class="generos" href="./genres.html">GENEROS</a> </li>
                 <li> <a class="favoritos" href="./favorite.html">FAVORITOS</a> </li>
-                <form action="resultado.html" method="get"> 
+                <form action="./search-results.html" method="thor" > 
                     <div class="search"> 
-                        <label for="SEARCH"> BUSCAR : </label>
-                        <input type="text" name="SEARCH" id="SEARCH"> 
+                        <label for="SEARCH">BUSCAR :  </label>
+                        <input type="text" name="SEARCH" id="SEARCH "> 
                     </div>
                 </form>
             </ul>
         </nav>
     </header>
 
-    <br>
-    <br>
-    <br>
+    <main>
+        <section class="bloquedetail">
+            <article class="bloque-portada">
+                <img class="portadadetail" src="./Img/thor.jpg">
+                <p class="texto-portada"> </p>
+                <h2 > <a class="flechainicio" href="./index.html">↩</a></h2>
+            </article>
+            <article>
+                <h1> THOR </h1>
+                <h2> Genero : <a class="titulospeliculas" href="./detail-genres.html">Acción/ Aventura</a></h2>
+                <p> ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ </p>
+                <p> Fecha de estreno : 07-07-2022 </p>
+                <p> Sinopsis : Tras desatar una antigua guerra, el codicioso guerrero Thor es desterrado a la Tierra por su padre para que viva entre los hombres y descubra así el verdadero sentido de la humildad. Allí, sin sus poderes, Thor deberá enfrentarse a las fuerzas más oscuras que su mayor enemigo le enviará desde Asgard.</p>
+                <div class="fav">
+                    <button class="botonfavoritos" type="submit"> Favourite ♡ 
+                    </button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
 
 </body>
 </html>
