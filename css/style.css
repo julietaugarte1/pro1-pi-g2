@@ -46,13 +46,20 @@ li a {
     display: flex;
     justify-content: right;
     color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
     margin-right: 40px;
+
+}
+
+.boton{
+    margin-left: 10px;
+    background-color: lightgray;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 20px;
 }
 
 form {
     display: inline;
+
 }
 
 input {
@@ -285,7 +292,7 @@ span {
 
 /* cambio a celular */
 @media (max-width: 400px) {
-    /* HOME  en celular*/
+    /* HOME  en celular */
     .main-index{
         height: 6000px;
     }
@@ -323,8 +330,6 @@ span {
         height: 400px;
     }
     
-    
-
     .search{
         margin-top: 20px;
         margin-right: 98px;
@@ -337,7 +342,6 @@ span {
          margin : 0px;
         color: white;
         font-size: 20px;
-
     }
 
     .home {
@@ -345,7 +349,6 @@ span {
         margin-top: 0px;
         color: white;
         font-size: 20px;
-
     }
 
     .listaHeader{
@@ -364,16 +367,6 @@ span {
         margin-top: 0px;
         color: white;
         font-size: 20px;
-
-    }
-
-    .sectionfooter, .articlefooter{ 
-      
-    }
-    .footer-list1,
-    .footer-list2,
-    .footer-list3{ 
-       
     }
 
     /* DETAIL MOVIES Y SERIES en celular */
@@ -388,17 +381,13 @@ span {
 
     .bloque-portada {
         justify-content: center;
-
     }
 
     .main-detail-movies{
         height: 50000 px;
-
     }
 
-
     /* GENRES en el celular */
-
    .section-genders{
     height: 1000px;
     width: 350px;
