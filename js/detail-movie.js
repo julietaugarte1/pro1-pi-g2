@@ -30,7 +30,6 @@ fetch (urldetail-movie)
         estreno.innerText = data.release;
         sinopsis.innerText = data.overview;
         genero.innerHTML = generosPeliculas;
-        favorite.innerText = data.
 
         return data
     })
