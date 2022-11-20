@@ -12,11 +12,9 @@ let duracion = document.querySelector(".")
 let sinopsis = document.querySelector(".sinopsis");
 let genero = document.querySelector(".titulospeliculas");
 
-
 //crear una apikey para poder utilizar url
 let apiKey = "996dc0a073c9e126288abaa1ade3770b"
 let urldetail = `https://api.themoviedb.org/3/movie/${pelicula}?api_key=${apiKey}&language=en-US`  //si o si con comas invertidas
-
 
 //
 fetch (urldetail-movie)
