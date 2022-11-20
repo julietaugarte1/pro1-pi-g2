@@ -1,12 +1,11 @@
 let qs = location.search; /* el usuario cuando busco algo creo una query que la estamos nombrando qs */
 let qsObj = new URLSearchParams(qs) ;
 let peliculas = qsObj.get('busqueda') ; 
-
-/* let tipo = qsObj.get('media'); */
+let tipo = qsObj.get('media'); 
 
 if (tipo == 'all' || tipo == 'movies') {
 
-    let url_1 = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&page=1&include_adult=false=${peliculas}`
+    let url_1 = `https://api.themoviedb.org/3/search/movie?api_key=e88616470bd2ffe2b246bcbf04162b02&query=${qsObj}`
 
     fetch(url_1)
         .then(function (response){
@@ -26,19 +25,24 @@ if (tipo == 'all' || tipo == 'movies') {
                 for (let i = 0; i < informacion.lenght; i++) {
                     if (informacion[1].poster_path == null) {
                         buscados += `
-                        <article class="articulo-peli-resultados">
+                        <section class="bloquedetail">
+                        <section class = "resultados">
+                            <article class="bloque-portada">
                         <a href="./detail-movie.html?movie_id=${informacion[i].id}"> 
-                        <img class="imgpeli-resultados" src="./img/noImage.png" alt="Portada">
+                        <img class="portadadetail" src="./Img/thor.jpg">
                         </a>
-                        <div class="resultados">
+
                         <a href="detail-movie.html">
-                        <h2 class="titulo-movie-search">${informacion[i].title}</h2>
+                        <h1 class="titulo-movie-search">${informacion[i].title}</h1>
                         </a>
-                        <h3 class="estreno-search">${informacion[i].release_date}</h3>
+                        <p class="estreno-search">${informacion[i].release_date}</p>
                         <p class="sinopsis-search">${informacion[i].overview}</p>
-                        </div>
-                        </article>`
+                        </section>
+                        </article>
+                        </section>`
+
                     }
+
                     else {
                         buscados +=
                         ` <article class="articulo-peli-resultados">

@@ -3,9 +3,9 @@ let urlseries = `https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&langu
 let urlpelis = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
 let urlsugerencias = `https://api.themoviedb.org/3/tv/{tv_id}/recommendations?api_key=${apiKey}&language=en-US&page=1`
 
-let bloque1 = document.querySelector9(".bloque1")
-let bloque2 = document.querySelector9(".bloque2")
-let bloque3 = document.querySelector9(".bloque3")
+let bloque1 = document.querySelector(".bloque1")
+let bloque2 = document.querySelector(".bloque2")
+let bloque3 = document.querySelector(".bloque3")
 
 //BLOQUE 1
 fetch(urlsugerencias)

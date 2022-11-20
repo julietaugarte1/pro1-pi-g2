@@ -13,14 +13,14 @@ let genero = document.querySelector(".titulospeliculas");
 let favorite = document.querySelector(".botonfavoritos");
 
 //crear una apikey para poder utilizar url
-let apiKey = f2d1519be18fc9f89991fa4919db7cb1
-let urldetail = "https://api.themoviedb.org/3/movie/550?api_key=f2d1519be18fc9f89991fa4919db7cb1"
+let apiKey = "f2d1519be18fc9f89991fa4919db7cb1"
+let urldetail = `https://api.themoviedb.org/3/movie/550?api_key=${apiKey}`
 
 
 // ir a buscar la info e insertarla en una variable
-fetch (urldetail-movie)
+fetch (urldetail)
     .then (function(response){
-        return repsuesta.json()
+        return response.json()
     })
     .then (function(data){
         console.log(data)
