@@ -23,13 +23,13 @@ fetch(urlsugerencias)
             let id = data.results[i].id
             let fecha = data.results[i].release_data
 
-            sugerencia += ` <article class="bloque-portada"> 
+            sugerencia +=`<article class="bloque-portada"> 
                             <a class="portadahome" href="./detail-movie.html?idPersonaje=${id}">
-                            <img class="portada" src="./Img/Dune.jpg">
-                            <p class="texto-portada"> <a class="titulospeliculas" href="./detail-movie.html">Dune</a>  </p>
-                            <p class="fecha-portada">  2021</p>
+                            <img class="portada" src="https://image.tmdb.org/t/p/w500/${imagenes}">
+                            <p class="texto-portada"> <a class="titulospeliculas" href="./detail-movie.html"> ${titulo} </a>  </p>
+                            <p class="fecha-portada"> ${fecha}</p>
                             </a>
-                            </article>`
+                          </article>`
         }
         bloque1.innerHTML = sugerencias;
         return data
@@ -57,11 +57,11 @@ fetch(urlpelis)
 
             pelis += ` <article class="bloque-portada"> 
                             <a class="portadahome" href="./detail-movie.html?idPersonaje=${id}">
-                            <img class="portada" src="./Img/Dune.jpg">
-                            <p class="texto-portada"> <a class="titulospeliculas" href="./detail-movie.html">Dune</a>  </p>
-                            <p class="fecha-portada">  2021</p>
+                            <img class="portada" src="https://image.tmdb.org/t/p/w500/${imagenes}">
+                            <p class="texto-portada"> <a class="titulospeliculas" href="./detail-movie.html"> ${titulo} </a>  </p>
+                            <p class="fecha-portada"> ${fecha}</p>
                             </a>
-                            </article>`
+                        </article>`
         }
         bloque2.innerHTML = movies;
         return data
@@ -87,13 +87,13 @@ fetch(urlseries)
         let id = data.results[i].id
         let fecha = data.results[i].release_data
 
-        sugerencia += ` <article class="bloque-portada"> 
+        series +=  ` <article class="bloque-portada"> 
                         <a class="portadahome" href="./detail-movie.html?idPersonaje=${id}">
-                        <img class="portada" src="./Img/Dune.jpg">
-                        <p class="texto-portada"> <a class="titulospeliculas" href="./detail-movie.html">Dune</a>  </p>
-                        <p class="fecha-portada">  2021</p>
+                        <img class="portada" src="https://image.tmdb.org/t/p/w500/${imagenes}">
+                        <p class="texto-portada"> <a class="titulospeliculas" href="./detail-movie.html"> ${titulo} </a>  </p>
+                        <p class="fecha-portada"> ${fecha}</p>
                         </a>
-                        </article>`
+                     </article>`
     }
     bloque3.innerHTML = series;
     return data

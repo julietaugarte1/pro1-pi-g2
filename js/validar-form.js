@@ -1,6 +1,6 @@
 let search = document.querySelector('.search')
 let input = document.querySelector('.palabraPelicula')
-
+ 
 search.addEventListener('submit' , function(e) {
     e.preventDefault();
 
