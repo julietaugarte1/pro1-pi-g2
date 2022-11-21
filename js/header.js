@@ -1,3 +1,5 @@
+// validar-form y header son lo mismo --> buscador
+
 let form = document.querySelector('form');
 let inputField = document.querySelector('.palabraPelicula');
 let message = document.querySelector('.message');
