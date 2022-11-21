@@ -10,7 +10,7 @@ ul {
     padding: 0;
     height: 80px;
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 li a {
@@ -21,7 +21,7 @@ li a {
     font-size: 30px;
     float: left;
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 .home {
@@ -47,19 +47,17 @@ li a {
     justify-content: right;
     color: white;
     margin-right: 40px;
-
 }
 
-.boton{
+.boton {
     margin-left: 10px;
     background-color: lightgray;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     border-radius: 20px;
 }
 
 form {
     display: inline;
-
 }
 
 input {
@@ -76,7 +74,6 @@ input {
     margin-left: -60%;
     margin-top: -2%;
 }
-
 
 /* footer */
 .sectionfooter {
@@ -118,7 +115,7 @@ input {
     font-size: 15px;
     margin: 5px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* HOME HTML */
@@ -128,13 +125,13 @@ input {
     margin-left: 10px;
     margin-top: 50px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
 }
 
-.bloque1,
-.bloque2,
-.bloque3 {
+.recommended_series,
+.recommended_movies,
+.top_movies {
     display: flex;
     height: 400px;
 }
@@ -173,7 +170,7 @@ input {
     font-size: 20px;
     margin: 5px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .fecha-portada {
@@ -181,7 +178,7 @@ input {
     font-size: 15px;
     margin: 5px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .titulospeliculas {
@@ -199,7 +196,7 @@ span {
     justify-content: center;
     background-color: rgba(51, 50, 50, 0.54);
     border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding: 4%;
     margin-top: 3cm;
     margin-left: 230px;
@@ -255,13 +252,12 @@ span {
     block-size: 380px;
 }
 
-
 .section-genders {
     display: flex;
     justify-content: center;
     border-radius: 10px;
     block-size: 340px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     justify-content: space-around;
     padding: 4%;
@@ -270,14 +266,13 @@ span {
     margin-right: 100px;
 }
 
-
 .div-genders {
     border-radius: 20px;
     text-align: center;
     padding: 15px;
     margin-bottom: 10px;
     font-size: 15px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     background-color: rgb(71, 71, 71);
 }
 
@@ -292,22 +287,25 @@ span {
 
 /* cambio a celular */
 @media (max-width: 400px) {
+
     /* HOME  en celular */
-    .main-index{
+    .main-index {
         height: 6000px;
     }
-    .bloque1,
-    .bloque2,
-    .bloque3 {
+
+    .recommended_series,
+    .recommended_movies,
+    .top_movies {
         height: 1950px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .titulo{
+    .titulo {
         text-align: center;
-        }
+    }
+
     .bloque-portada {
         width: 100%;
         height: 400px;
@@ -326,20 +324,20 @@ span {
         margin-left: 0;
     }
 
-    .header{
+    .header {
         height: 400px;
     }
-    
-    .search{
+
+    .search {
         margin-top: 20px;
         margin-right: 98px;
         font-size: 20px;
         justify-content: left;
         margin-left: 15px;
     }
-    
+
     .generos {
-         margin : 0px;
+        margin: 0px;
         color: white;
         font-size: 20px;
     }
@@ -351,7 +349,7 @@ span {
         font-size: 20px;
     }
 
-    .listaHeader{
+    .listaHeader {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -359,7 +357,7 @@ span {
         display: flex;
         flex-direction: column;
         color: white;
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
     }
 
     .favoritos {
@@ -375,7 +373,7 @@ span {
         margin-left: 2px;
         display: flex;
         flex-direction: column;
-        height:auto;
+        height: auto;
         width: 350px;
     }
 
@@ -383,21 +381,22 @@ span {
         justify-content: center;
     }
 
-    .main-detail-movies{
+    .main-detail-movies {
         height: 50000 px;
     }
 
     /* GENRES en el celular */
-   .section-genders{
-    height: 1000px;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px;
-   }
-   .span-genders1, .span-genders2{
-    width: 350px;
-   }
-    
+    .section-genders {
+        height: 1000px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .span-genders1,
+    .span-genders2 {
+        width: 350px;
+    }
 }
