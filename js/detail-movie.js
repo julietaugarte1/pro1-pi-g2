@@ -13,7 +13,7 @@ let genero = document.querySelector(".titulospeliculas");
 
 //crear una apikey para poder utilizar url
 let apiKey = "996dc0a073c9e126288abaa1ade3770b"
-let urldetail = `https://api.themoviedb.org/3/movie/${pelicula}?api_key=996dc0a073c9e126288abaa1ade3770b&language=en-US`  //si o si con comas invertidas
+let urldetail = `https://api.themoviedb.org/3/movie/${pelicula}?api_key=${apiKey}&language=en-US`  //si o si con comas invertidas
 
 
 //
@@ -42,6 +42,46 @@ fetch(urldetail)
         return error
     })
 
+/* Crear un array vacio para luego rellenarlo */
+let favoritos = [];
+
+/* recuperamos el storage */
+let recuperoStorage = localStorage.getItem('favoritos');
+   
+/* Preguntamos si es distinto de nulo-  es verdarero quiero covertirlo de JSON a un array */
+if(recuperoStorage != null){
+    favoritos = JSON.parse(recuperoStorage);
+};
+
+/* Validar si este id existe en el favoritos (localsStorage) */
+if (favoritos.includes(idPersonaje)) {
+    btn.innerText="Quitar de Favorito";
+}
+
+
+/* Agregarle un evento al boton de agregar a favorito */
+btn.addEventListener("click",function (e) {
+    e.preventDefault()
+    
+    /* Si lo incluye, que lo elimine del array y al boton le ponga "Agregar Favorito" */
+    if(favoritos.includes(id)){
+        let indice = favoritos.indexOf(id);
+        favoritos.splice(indice,1);
+        btn.innerText="Agregar a Favorito";
+    }else{
+    /* Si NO lo incluye, que lo agregue al array y al boton le ponga "Quitar Favorito" */
+        favoritos.push(id);
+        btn.innerText="Quitar de Favorito";
+    }
+
+    /* Si lo incluye o no, quiero poder subir el array al localStorage ->
+    Pero tengo que pasarlo a JSON primeramente*/
+    let favToString = JSON.stringify(favoritos);
+            
+    /* Cuando este en JSON ahora si puedo subirlo al localStorage */
+    localStorage.setItem('favoritos',favToString)
+    
+});
 
 /* let qs = location.search;
 let qsObj = new URLSearchParams(qs);
