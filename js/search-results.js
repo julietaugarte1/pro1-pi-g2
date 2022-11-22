@@ -5,7 +5,7 @@ let tipo = qsObj.get('media');
 
 if (tipo == 'all' || tipo == 'movies') {
 
-    let url_1 = `https://api.themoviedb.org/3/search/movie?api_key=e88616470bd2ffe2b246bcbf04162b02&query=${qsObj}`
+    let url_1 = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${qsObj}`
 
     fetch(url_1)
         .then(function (response){

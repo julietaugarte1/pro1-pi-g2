@@ -1,4 +1,7 @@
 //peliculas
+let apiKey = "996dc0a073c9e126288abaa1ade3770b";
+
+let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`
 fetch(url)
     .then(function (response) {
         return response.json()
@@ -6,9 +9,9 @@ fetch(url)
     .then(function (data) {
         console.log(data);
         let generos = data.genres
-        let seccion = document.querySelector("span-genders2");
+        let seccion = document.querySelector(".tipos_generos_peliculas");
         for (let i = 0; i < generos.length; i++) {
-            seccion.innerHTML += `<article class="generos"> <a href="./detail-generes.html?id=${generos[i].id}"> ${generos[i].name}</a> </article>`
+            seccion.innerHTML += `<a class="cada_tipo_genero" href="detail-generes.html?id=${generos[i].id}">  <div class="div-genders" > ${generos[i].name} </div> </a> `
 
         }}
 
@@ -26,9 +29,9 @@ fetch(ruta)
     .then(function (data) {
         console.log(data);
         let generos = data.genres
-        let seccion = document.querySelector(".section-genders");
+        let seccion = document.querySelector(".tipos_generos_series");
         for (let i = 0; i < generos.length; i++) {
-            seccion.innerHTML += `<article class="generos"> <a href="./detail-generes.html?id=${generos[i].id}"> ${generos[i].name}</a> </article>`
+            seccion.innerHTML += ` <a class="cada_tipo_genero"  href="detail-generes.html?id=${generos[i].id}"> <div class="div-genders" > ${generos[i].name}</div> </a>`
 
         }}
 
