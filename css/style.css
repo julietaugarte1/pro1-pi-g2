@@ -193,7 +193,7 @@ span {
 
 .bloquedetail {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     background-color: rgba(51, 50, 50, 0.54);
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
@@ -229,6 +229,7 @@ span {
 /* GENDERS */
 .h1-genders {
     color: white;
+   
 }
 
 
@@ -241,6 +242,8 @@ span {
     margin-left: 30px;
     block-size: 380px;
     height: max-content;
+    width: 350px;
+    text-align: center;
 }
 
 .section-genders {
