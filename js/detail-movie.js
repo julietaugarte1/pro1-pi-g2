@@ -11,6 +11,7 @@ fetch(urldetail)
         return response.json();
     })
     .then(function (data) {
+        console.log(data);
         let imagen = document.querySelector(".portadadetail");
         let titulo = document.querySelector(".titulo");
         let rating = document.querySelector(".calificacion");
@@ -26,9 +27,9 @@ fetch(urldetail)
 
         
         /* dentro de los <p> vacios del html se ponen los datos de la api */
-        titulo.innerHTML += data.title;
+        titulo.innerHTML += data.name;
         rating.innerHTML += data.vote_average;
-        fecha.innerHTML += data.release_date;
+        fecha.innerHTML += data.first_air_date;
         duracion.innerHTML += data.runtime;
         sinopsis.innerHTML += data.overview;
 
