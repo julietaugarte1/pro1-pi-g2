@@ -11,7 +11,9 @@ fetch(url)
         let generos = data.genres
         let seccion = document.querySelector(".tipos_generos");
         for (let i = 0; i < generos.length; i++) {
-            seccion.innerHTML += `<a class="cada_tipo_genero" href="detail-generes.html?id=${generos[i].id}">  <div class="div-genders" > ${generos[i].name} </div> </a> `
+            seccion.innerHTML += `
+                <a class="cada_tipo_genero" href="detail-genres.html?id=${generos[i].id}">
+                <div class="div-genders" > ${generos[i].name} </div> </a> `
 
         }}
 
@@ -32,7 +34,7 @@ fetch(ruta)
         let generos = data.genres
         let seccion = document.querySelector(".tipos_generos2");
         for (let i = 0; i < generos.length; i++) {
-            seccion.innerHTML += ` <a class="cada_tipo_genero"  href="detail-generes.html?id=${generos[i].id}"> <div class="div-genders" > ${generos[i].name}</div> </a>`
+            seccion.innerHTML += ` <a class="cada_tipo_genero"  href="detail-genres.html?id=${generos[i].id}"> <div class="div-genders" > ${generos[i].name}</div> </a>`
 
         }}
 

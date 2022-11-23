@@ -11,11 +11,12 @@ console.log(favoritos);
 
 if (favoritos == null || favoritos.length == 0) {
     /* Muestres no hay favoritos */
-    section.innerHTML = '<p> No hay nada en favoritos </p>'
+    section_fav.innerHTML = '<p> No hay nada en favoritos </p>'
+    
 } else {
     
     for (let i = 0; i < favoritos.length; i++) {
-        let url =   `https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=${apiKey}&language=en-US`
+        let url =   `https://api.themoviedb.org/3/movie/id=${favoritos[i]}?api_key=${apiKey}&language=en-US`
 
         fetch(url)
         .then(function (response) {

@@ -1,13 +1,15 @@
-let qs = location.search; /* el usuario cuando busco algo creo una query que la estamos nombrando qs */
+let apiKey = "996dc0a073c9e126288abaa1ade3770b";
+
+let qs = location.search; 
 let qsObj = new URLSearchParams(qs) ;
 let peliculas = qsObj.get('busqueda') ; 
 let tipo = qsObj.get('media'); 
 
 if (tipo == 'all' || tipo == 'movies') {
 
-    let url_1 = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${qsObj}`
+    let url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${qsObj}`
 
-    fetch(url_1)
+    fetch(url)
         .then(function (response){
             return response.json()
         })
