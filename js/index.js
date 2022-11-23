@@ -52,7 +52,7 @@ fetch(url_popular_movies)
       let fecha = data.results[i].release_date;
 
       movies += ` <article class="bloque-portada"> 
-                            <a class="portadahome" href="./detail-movie.html?idPersonaje=${id}">
+                            <a class="portadahome" href="./detail-movie.html?id=${id}">
                             <img class="portada" src="https://image.tmdb.org/t/p/w500/${imagenes}">
                             <p class="texto-portada"> <a class="titulospeliculas" href="./detail-movie.html"> ${titulo} </a>  </p>
                             <p class="fecha-portada"> ${fecha}</p>

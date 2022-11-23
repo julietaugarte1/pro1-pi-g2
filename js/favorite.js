@@ -1,3 +1,5 @@
+let apiKey = "996dc0a073c9e126288abaa1ade3770b";
+
 let recuperoStorage = localStorage.getItem('favoritos');
 let favoritos = JSON.parse(recuperoStorage);
 let section = document.querySelector(".section_fav");
@@ -22,9 +24,9 @@ if (favoritos == null || favoritos.length == 0) {
             console.log(data);
             favs += `
                     <article class="bloque-portada"> 
-                        <a class="portadahome" href=href="./detail-serie.html?idPersonaje=${data.id}">
+                        <a class="portadahome" href=href="./detail-movie.html?id=${data.id}">
                             <img class="portada" src=${data.image}>
-                            <p class="texto-portada"> <a class="titulospeliculas" href="./detail-serie.html?idPersonaje=${data.id}">${data.name}</a> </p>
+                            <p class="texto-portada"> <a class="titulospeliculas" href="./detail-movie.html?id=${data.id}">${data.name}</a> </p>
                             <p class="fecha-portada"> ${data.release_date}</p>
                         </a>
                     </article>`;

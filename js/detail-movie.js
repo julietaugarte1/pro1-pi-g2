@@ -1,10 +1,10 @@
 let qs_movies = location.search //obtengo la query string desde la url
 let queryString_movie = new URLSearchParams(qs_movies) //transformo la query en un objeto literal
-let id = queryString_movie.get('movie_id'); // obtengo el dato del id del objeto literal
+let id = queryString_movie.get('id'); // obtengo el dato del id del objeto literal
 console.log(id)
 
 let apiKey = "996dc0a073c9e126288abaa1ade3770b";
-let urldetail = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`
+let urldetail = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`
 
 fetch(urldetail)
     .then(function (response) {
@@ -44,7 +44,7 @@ fetch(urldetail)
 
         for (let i = 0; i < data.genres.length; i++) {
             generos +=
-                `<p><a href="./detail-genres.html?id_G_Movie=${data.genres[i].id}&name_G_Movie=${data.genres[i].name}&tipo=movies">${data.genres[i].name}.  </a></p>`
+                `<p><a href="./detail-genres.html?id=${data.genres[i].id}&name_G_Movie=${data.genres[i].name}&tipo=movies">${data.genres[i].name}.  </a></p>`
         }
         generosdetail.innerHTML += generos;
 
