@@ -1,3 +1,6 @@
+/* En este funciona la seleccion de peliculas por genero Pero el titulo no se cambia */
+
+
 let apiKey = "996dc0a073c9e126288abaa1ade3770b";
 
 let querystring = location.search;
@@ -21,12 +24,15 @@ if(type=="movies"){
         tituloGenero.innerHTML+=`<h1> Peliculas del genero: ${nombreGenero}`
         
         for (let i = 0; i < data.results.length ; i++) {
-            listaGenero.innerHTML += `
-                <li class="cada_pelicula_dg"><a href="detail-movie.html?id=${data.results[i].id}"> <img class= "img_genre" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}">
-                <h3> ${data.results[i].title} </h3>
-                <p>Fecha de estreno: ${data.results[i].release_date} </p>
-                </a>
-        </li>`
+            listaGenero.innerHTML += 
+
+                    `<article class="bloque-portada"> 
+                    <a class="portadahome" href="detail-movie.html?id=${data.results[i].id}">
+                    <img class="portada" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}">
+                    <p class="texto-portada"> <a class="titulospeliculas" href="./detail-movie.html">  ${data.results[i].title} </a>  </p>
+                    <p class="fecha-portada"> Fecha de estreno: ${data.results[i].release_date}</p>
+                    </a>
+                </article>`
             
         }
 
@@ -49,12 +55,16 @@ else{
         tituloGenero.innerHTML+=`<h1> Series del genero: ${nombreGenero}
         </h1>`
         for (let i = 0; i < data.results.length ; i++) {
-            listaGenero.innerHTML += `
-            <li class="cada_pelicula_dg" ><a href="detail-serie.html?id=${data.results[i].id}"> <img class="img_genre" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}">
-            <h3> ${data.results[i].name} </h3>
-            <p>Fecha de estreno: ${data.results[i].first_air_date} </p>
-            </a>
-        </li>`
+            listaGenero.innerHTML +=
+        `<article class="bloque-portada"> 
+                    <a class="portadahome" href="detail-movie.html?id=${data.results[i].id}">
+                    <img class="portada" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}">
+                    <p class="texto-portada"> <a class="titulospeliculas" href="./detail-movie.html">  ${data.results[i].name} </a>  </p>
+                    <p class="fecha-portada"> Fecha de estreno: ${data.results[i].first_air_date}</p>
+                    </a>
+                </article>`
+               
+    
         }
 
     })
