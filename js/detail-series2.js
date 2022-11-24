@@ -56,7 +56,7 @@ fetch(dataEndpoint)
 
 
 
-  /* BOTON FAV */
+/* BOTON FAV */
 
 let favoritos = [];
 let recuperoStorage = localStorage.getItem('favoritos'); 
