@@ -1,6 +1,6 @@
-/* let search = document.querySelector('.search')
+let search = document.querySelector('.search')
 let input = document.querySelector('.palabraPelicula')
- git
+
 search.addEventListener('submit' , function(e) {
     e.preventDefault();
 
@@ -12,13 +12,14 @@ search.addEventListener('submit' , function(e) {
         this.submit()
     }
 })
- */
 
-let form = document.querySelector('form');
+
+
+/* let form = document.querySelector('form');
 let inputField = document.querySelector('.palabraPelicula');
 let mensaje = document.querySelector('.mensaje');
 
-form.addEventListener('submit', function (e) {
+search.addEventListener('submit', function (e) {
     e.preventDefault()
     console.log("No response");
 
