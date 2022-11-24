@@ -90,6 +90,7 @@ fav.addEventListener('click', function (e) {
     }
     else { // Guardar dato en el array favoritos
         favoritos.push(id);
+        favoritos.push('s');
         /* dsps del click cambia el texto del boton */
         fav.innerText = "Quitar de favoritos";
     }

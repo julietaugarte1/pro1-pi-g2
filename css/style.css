@@ -136,6 +136,10 @@ input {
     height: 400px;
 }
 
+.section_fav{
+    display: inline-flex;
+}
+
 .bloque-portada {
     /* bloque de cada pelicula individualmente */
     width: 250px;
